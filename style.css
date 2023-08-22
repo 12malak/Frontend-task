@@ -415,18 +415,7 @@ box-shadow: 5px 8px 10px rgba(0,0,0,0.1);
         font-size: 20px;
        
       }
-      
-      /* .slider-buttons .swiper-button-next,
-      .slider-buttons .swiper-button-prev {
-        color: #050505;
-        position: relative;
-        right: unset;
-        left: unset;
-        margin-top: 10px; /* Add margin-top to create space between buttons and content */
-      
-      
-  
-  
+ 
       .slider-buttons .swiper-button-next,
   .slider-buttons .swiper-button-prev {
 
@@ -436,7 +425,7 @@ box-shadow: 5px 8px 10px rgba(0,0,0,0.1);
     margin-top: 0px;
     
   }
-      /* Update the styles for .swiper-button-next::after and .swiper-button-prev::after */
+      
       .slider-buttons .swiper-button-next::after,
       .slider-buttons .swiper-button-prev::after {
         font-size: 20px; /* Adjust the font size as needed */
@@ -578,105 +567,129 @@ box-shadow: 5px 8px 10px rgba(0,0,0,0.1);
     /* Menu Section End */
   
   /* Section6 End */
-  /* Section2 start */
-
-  .section2 {
-    border-radius: 40px;
-    background:#91af3d;
-    height: 300px;
-    border: 12px solid #dce7be;
-   margin: 0px 55px 0px 55px;
-  
+/* Section2 start */
+.section2 {
+  border-radius: 40px;
+  background: #91af3d;
+  border: 12px solid #dce7be;
+  margin: 0px 55px;
 }
 
+.section2 .swiper.mySwiper2.container {
+  width: 100%;
+}
 
-
+.section2 .swiper-slide.card-slider {
+  width: calc(100% / 4);
+}
 
 .section2 .card-slider .image {
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    padding: 1px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  padding: 1px;
 }
 
 .section2 .card-slider .image img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 .card-slider {
-    background:#91af3d;
-    position: relative;
-    margin:0px 0;
-    border-radius: 40px;
-   
-  }
-  
-  .card-slider:hover {
-   margin-bottom: 33px;
-    height: 330px; 
-color: #fff;
-  }
+  background: #91af3d;
+  position: relative;
+  margin: 0px 0;
+  border-radius: 40px;
+}
+
+.card-slider:hover {
+  margin-bottom: 33px;
+  height: 330px;
+  color: #fff;
+}
 
 .card-slider .card-slider-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px;
-    position: relative;
-    z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  position: relative;
+  z-index: 100;
 }
 
-.card-slider .name-profession{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 10px;
+.card-slider .name-profession {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10px;
 }
-.card-slider .name-profession .name{
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 5px;
-    
+
+.card-slider .name-profession .name {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
 }
-.card-slider .name-profession .Profession{
-    font-size: 15px;
-    font-weight: 500;
-    margin-bottom: 5px;
-    
+
+.card-slider .name-profession .Profession {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 5px;
 }
 
 .card-slider .button-container {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 15px;
-    opacity: 0;
-    transition: opacity 0.3s ease;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
-.card-slider:hover .button-container {
-    opacity: 1;
 
+.card-slider:hover .button-container {
+  opacity: 1;
 }
-.card-slider .button-container button ,
-.section4 .offers-items button{
+
+.card-slider .button-container button,
+.section4 .offers-items button {
   background: #e4b95b;
-    outline: none;
-    border: none;
-    color: #fff;
-    padding: 8px 22px;
-    border-radius: 20px;
-    font-size: 14px;
-    transition: all 0.3s ease;
-    margin: 0 5px;
+  outline: none;
+  border: none;
+  color: #fff;
+  padding: 8px 22px;
+  border-radius: 20px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  margin: 0 5px;
 }
-.card-slider .button-container button:hover ,
+
+.card-slider .button-container button:hover,
 .section4 .offers-items button:hover {
-    background: #edfac9;
-    color:#c6ee57;
+  background: #edfac9;
+  color: #c6ee57;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .section2 {
+    margin: 0 20px;
+  }
+
+  .section2 .swiper.mySwiper2.container {
+    width: 100%;
+  }
+
+  .section2 .swiper-slide.card-slider {
+    width: calc(100% / 3);
+  }
+}
+
+@media (max-width: 480px) {
+  .section2 .swiper-slide.card-slider {
+    width: calc(100% / 2);
+  }
 }
   /* Section2 End */
 
@@ -746,7 +759,7 @@ color: #fff;
   left: 0;
 }
 
-.Box-Small i , .box-Small i {
+.Box-Small i , .box-Small i , .Box-Small-About i{
   align-items: center;
   justify-content: center;
   display: flex;
@@ -935,10 +948,9 @@ ul{
 }
 
 
- /* Section6 start */
+/* Section6 start */
 
-
-#About .card{
+#About .card {
   background: linear-gradient(to bottom, #effacf, #f2f8e2);
   border-radius: 20px;
   position: relative;
@@ -946,7 +958,7 @@ ul{
   padding: 25px;
 }
 
-#About .card .card-content{
+#About .card .card-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -955,28 +967,38 @@ ul{
   z-index: 100;
 }
 
-#About .card .name-profession{
+#About .card .name-profession {
   display: flex;
- text-align: left;
+  text-align: left;
   flex-direction: column;
   margin-top: 10px;
 }
-#About .card .name-profession .name{
+
+#About .card .name-profession .name {
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 5px;
-  
 }
-#About .card .name-profession .Profession{
+
+#About .card .name-profession .Profession {
   font-size: 20px;
   font-weight: 400;
   margin-bottom: 5px;
-  
 }
 
-
-
-
+#About .Box-Small-About {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: linear-gradient(to bottom, #c0ec45, #c6ee57);
+}
 #slider-About.slider-buttons {
   position: absolute;
   display: flex;
@@ -988,9 +1010,8 @@ ul{
   z-index: 1;
 }
 
-#slider-About.slider-buttons .swiper-button-next, 
+#slider-About.slider-buttons .swiper-button-next,
 #slider-About.slider-buttons .swiper-button-prev {
- 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1003,12 +1024,80 @@ ul{
 #slider-About.slider-buttons .swiper-button-next::after,
 #slider-About.slider-buttons .swiper-button-prev::after {
   font-size: 20px;
-  color:black;
+  color: black;
   font-weight: bold;
 }
-
 
 #slider-About .slider-buttons .swiper-button-prev {
   margin-right: 20px;
 }
 
+.section2 .swiper-slide.card-slider {
+  width: calc(100% / 4);
+}
+
+@media (max-width: 1200px) {
+  .section2 .swiper-slide.card-slider {
+    width: calc(100% / 3);
+  }
+}
+
+@media (max-width: 768px) {
+  #About .card {
+    padding: 15px;
+  }
+
+  #About .card .card-content {
+    padding: 20px;
+  }
+
+  #About .card .name-profession .name {
+    font-size: 16px;
+  }
+
+  #About .card .name-profession .Profession {
+    font-size: 18px;
+  }
+
+  #slider-About.slider-buttons .swiper-button-next,
+  #slider-About.slider-buttons .swiper-button-prev {
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+  }
+
+  .section2 .swiper-slide.card-slider {
+    width: calc(100% / 2);
+  }
+}
+
+@media (max-width: 480px) {
+  #About .card {
+    padding: 10px;
+  }
+
+  #About .card .card-content {
+    padding: 15px;
+  }
+
+  #About .card .name-profession .name {
+    font-size: 14px;
+  }
+
+  #About .card .name-profession .Profession {
+    font-size: 16px;
+  }
+
+  #slider-About.slider-buttons .swiper-button-next,
+  #slider-About.slider-buttons .swiper-button-prev {
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+  }
+
+  .section2 .swiper-slide.card-slider {
+    width: 100%;
+  }
+}

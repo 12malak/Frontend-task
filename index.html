@@ -58,7 +58,7 @@
 <main>
    <!-- Section2 Start -->
  
-    <div class="col-slider-buttons" >
+    <div class="col-slider-buttons"  >
         <div class="slider-buttons" >
             <div class="swiper-button-prev" ></div>
             <div class="swiper-button-next"></div>
@@ -80,7 +80,7 @@
    
    <div class="section2">
    
-    <div class="swiper mySwiper2 container" style="height: 270px; width:950px; border-radius:  40px;">
+    <div class="swiper mySwiper2 container" style="height: 270px; width:100%; border-radius:  40px;">
         <div class="swiper-wrapper content">
 
 
@@ -621,19 +621,19 @@
      <!-- Section5 End -->
 
  
-     <div class="hero" id="About">
-        <div class="row justify-content">
-          <div class="col">
-            <img src="image/chefs5.png" class="pic1-img">
+     <div class="hero" id="About" style="margin-top: 22px;">
+        <div class="row justify-content" >
+          <div class="col" style="right: 122px;">
+            <img src="image/girl3.png" class="pic1-img" style="height: 100%; width: 100%;">
           </div>
            
           <div class="col">
-          <div class="box-title">
+          <div class="box-title" style="margin-top: 42px;">
             <div class="box-Small" >
-                <i class='fas fa-award'></i>
+                <i class='fa fa-envelope-open'></i>
               </div>
-            <h3 style="display: inline-block; vertical-align: middle; margin-left: 10px; font-size: 24px;">Our Value To Help You</h3>
-            <p style="margin: 22px; font-size: 17px; text-align: left;">We always want to provide the best value for you and your health , join us to maximize the benefits </p>
+            <h3 style="display: inline-block; vertical-align: middle; margin-left: 10px; font-size: 24px; ">Testimonials About us</h3>
+            <p style="margin: 22px; font-size: 17px; text-align: left;">in the smallest case we always give your best , find out what other users have to say about us </p>
           </div>
             
     <div class="section3" id="About" style="position: relative;">
@@ -644,10 +644,12 @@
                 <div class="swiper-slide card">
                     <div class="card-content">
                        
-                     
+                        <div class="Box-Small-About relative" style="margin-top: -42px; z-index: 1;">
+                            <i class='fa fa-comment' style="font-size: 28px;"></i>
+                          </div>
 
                         <div class="name-profession">
-                            <p class="name"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt praesentium nesciunt possimus </p>
+                            <p class="name">"I've tried several recipes from the cooking site, and they've always turned out delicious. The instructions are clear, and the results are consistently impressive." </p>
                             <h3 class="Profession" style="color: #708d20; font-weight: 600;">Maria </h3>
                             <h3 class="Profession"> Web Designer </h3>
                         </div>
@@ -663,10 +665,12 @@
                 <div class="swiper-slide card">
                     <div class="card-content">
                        
-                     
+                        <div class="Box-Small-About relative" style="margin-top: -42px; z-index: 1;">
+                            <i class='fa fa-comment' style="font-size: 28px;"></i>
+                          </div>
 
                         <div class="name-profession">
-                            <p class="name"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt praesentium nesciunt possimus </p>
+                            <p class="name">"I had an incredible dining experience at this restaurant. The ambiance was cozy, the staff was attentive, and the food was absolutely delicious. Highly recommended!" </p>
                             <h3 class="Profession" style="color: #708d20; font-weight: 600;"> Ola </h3>
                             <h3 class="Profession"> Chef </h3>
                         </div>
@@ -680,13 +684,15 @@
               
                 <div class="swiper-slide card">
                     <div class="card-content">
-                       
+                        <div class="Box-Small-About relative" style="margin-top: -42px; z-index: 1;">
+                            <i class='fa fa-comment' style="font-size: 28px;"></i>
+                          </div>
                      
 
                         <div class="name-profession">
-                            <p class="name"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt praesentium nesciunt possimus </p>
+                            <p class="name">"The restaurant exceeded my expectations. The menu had a great variety of options, and the presentation of the dishes was impressive. The flavors were unique and delightful." </p>
                             <h3 class="Profession" style="color: #708d20; font-weight: 600;">Ahmad </h3>
-                            <h3 class="Profession">Chef </h3>
+                            <h3 class="Profession">freelancer </h3>
                         </div>
 
                       
@@ -699,12 +705,14 @@
                 <div class="swiper-slide card">
                     <div class="card-content">
                        
-                     
+                        <div class="Box-Small-About relative" style="margin-top: -42px; z-index: 1;">
+                            <i class='fa fa-comment' style="font-size: 28px;"></i>
+                          </div>
 
                         <div class="name-profession">
-                            <p class="name"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt praesentium nesciunt possimus </p>
+                            <p class="name">"I've been a regular at this restaurant for years, and it never disappoints. The quality of the ingredients and the attention to detail in every dish are remarkable</p>
                             <h3 class="Profession" style="color: #708d20; font-weight: 600;"> Malak </h3>
-                            <h3 class="Profession"> Web Designer </h3>
+                            <h3 class="Profession"> software engineering </h3>
                         </div>
 
                       
@@ -808,17 +816,29 @@
     });
 
     var swiper2 = new Swiper(".mySwiper2", {
-        slidesPerView: 4,
-        spaceBetween:0,
-        slidesPerGroup:4,
-        loop: true,
-        loopFillGroupWithBlank: true,
-        
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        
+  slidesPerView: 4,
+  spaceBetween: 0,
+  slidesPerGroup: 4,
+  loop: true,
+  loopFillGroupWithBlank: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 4,
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 3,
+    },
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 2,
+    },
+  },
 });
 var swiper = new Swiper(".mySwiper3", {
         slidesPerView: 1,
