@@ -299,13 +299,7 @@ box-shadow: 5px 8px 10px rgba(0,0,0,0.1);
       background: #dce7be;
       
   }
-  #swiper-News .section .card .image img{
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-      border-radius: 50%;
-  }
-  
+ 
   
   #swiper-News .card{
       background:#dce7be;
@@ -314,7 +308,7 @@ box-shadow: 5px 8px 10px rgba(0,0,0,0.1);
       margin: 20px 0;
       box-shadow: 5px 8px 10px rgba(0,0,0,0.1);
     
-      border: 22px solid #e9e7e7;
+      border: 22px solid #dce7be;
   }
   #swiper-News .card::before{
       content: "";
@@ -327,35 +321,15 @@ box-shadow: 5px 8px 10px rgba(0,0,0,0.1);
       border-radius: 100% 100% 20% 20%;
      
   }
-  #swiper-News .card .card-content{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 30px;
-      position: relative;
-      z-index: 100;
-  }
+
   
-  
-  #swiper-News .card .name-profession{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      margin-top: 40px;
-  }
   #swiper-News .card .name-profession .name{
       font-size: 15px;
       font-weight: 500;
       margin-bottom: 5px;
       
   }
-  #swiper-News .card .name-profession .Profession{
-      font-size: 15px;
-      font-weight: 500;
-      margin-bottom: 5px;
-      
-  }
+ 
   
   #swiper-News .card .button{
       width: 100%;
@@ -375,10 +349,7 @@ box-shadow: 5px 8px 10px rgba(0,0,0,0.1);
       margin: 0 5px;
      
   }
-  #swiper-News .card .button button:hover{
-      background: #c6ee57;
-      color:  #ffffff;;
-  }
+ 
   
   .col h1{
       margin-top: 20px;
@@ -590,7 +561,8 @@ box-shadow: 5px 8px 10px rgba(0,0,0,0.1);
   padding: 1px;
 }
 
-.section2 .card-slider .image img {
+.section2 .card-slider .image img ,
+#swiper-News .section .card .image img{
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -610,7 +582,8 @@ box-shadow: 5px 8px 10px rgba(0,0,0,0.1);
   color: #fff;
 }
 
-.card-slider .card-slider-content {
+.card-slider .card-slider-content ,
+#swiper-News .card .card-content{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -619,7 +592,8 @@ box-shadow: 5px 8px 10px rgba(0,0,0,0.1);
   z-index: 100;
 }
 
-.card-slider .name-profession {
+.card-slider .name-profession ,
+#swiper-News .card .name-profession{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -627,16 +601,18 @@ box-shadow: 5px 8px 10px rgba(0,0,0,0.1);
   margin-top: 10px;
 }
 
-.card-slider .name-profession .name {
+.card-slider .name-profession .name  {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 5px;
 }
 
-.card-slider .name-profession .Profession {
+.card-slider .name-profession .Profession ,
+#swiper-News .card .name-profession .Profession {
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 5px;
+ 
 }
 
 .card-slider .button-container {
@@ -666,8 +642,9 @@ box-shadow: 5px 8px 10px rgba(0,0,0,0.1);
 }
 
 .card-slider .button-container button:hover,
-.section4 .offers-items button:hover {
-  background: #edfac9;
+.section4 .offers-items button:hover ,
+#swiper-News .card .button button:hover  {
+  background: #f9faf7;
   color: #c6ee57;
 }
 
